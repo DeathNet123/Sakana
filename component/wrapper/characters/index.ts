@@ -1,5 +1,7 @@
 import _chisato from './chisato.png';
 import _takina from './takina.png';
+import _tom from './tom.png';
+import _jerry from './jerry.png';
 
 export interface SakanaWidgetState {
   /**
@@ -63,7 +65,35 @@ const takina: SakanaWidgetCharacter = {
   },
 };
 
+const jerry: SakanaWidgetCharacter = {
+  image: _jerry,
+  initialState: {
+    i: 0.08,
+    s: 0.1,
+    d: 0.988,
+    r: 12,
+    y: 2,
+    t: 0,
+    w: 0,
+  },
+};
+
+const tom: SakanaWidgetCharacter = {
+  image: _tom,
+  initialState: {
+    i: 0.08,
+    s: 0.1,
+    d: 0.988,
+    r: 12,
+    y: 2,
+    t: 0,
+    w: 0,
+  },
+};
+
 export default {
   chisato,
   takina,
+  jerry,
+  tom,
 };
